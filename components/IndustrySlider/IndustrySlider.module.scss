@@ -1,0 +1,207 @@
+@import "../../styles/variables";
+.industries-expertise{
+    padding: 80px 0 ;
+    .industry-slider {
+        display: flex;
+        width: 100%;
+        margin: 20px 0 0;
+        align-items: center;
+        position: relative;
+      
+        &::before {
+          content: "";
+          background: $primary-color;
+          width: 2px;
+          height: 44%;
+          position: absolute;
+          left: 50%;
+          bottom: 14px;
+          transform: translateX(-50%);
+        }
+        &::after {
+          content: "";
+          background: $primary-color;
+          width: 2px;
+          height: 44%;
+          position: absolute;
+          left: 50%;
+          top: 14px;
+          transform: translateX(-50%);
+        }
+        .fixed-width {
+          width: 46%;
+          display: block;
+          position: relative;
+          overflow: hidden;
+      
+          .mockup-box {
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+          }
+          .industries-img {
+            display: block;
+            //   width: 288px;
+            margin: 0 auto;
+      
+            .slick-list {
+              overflow: visible;
+              padding: 0 !important;
+      
+              .slick-slide {
+                padding: 16px 0px;
+                //   width: 300px !important;
+                margin: 0 5px;
+                img {
+                  height: 580px;
+                  object-fit: cover;
+                  transition: 0.3s transform;
+                }
+              }
+              .slick-slide.slick-current.slick-active.slick-center {
+                img {
+                  transform: scale(1.35);
+                  padding-top: 70px;
+                  padding-bottom: 70px;
+                  border-radius: 40px;
+                }
+              }
+            }
+          }
+        }
+      }
+      .industries-text {
+        width: 46%;
+        position: static;
+        margin-left: auto;
+        height: 100%;
+      
+        // &::after {
+        //   content: "";
+        //   position: absolute;
+        //   width: 100%;
+        //   height: 23%;
+        //   bottom: 5%;
+        //   background: $white;
+        //   opacity: 0.5;
+        // }
+      
+        .industries-list {
+          display: flex !important;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 5px;
+          margin-top: 35px;
+          .industry-circle {
+            width: 100px;
+            height: 100px;
+            /* UI Properties */
+            background: $white;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+      
+            img{
+              width: 70px;
+              transition: 0.35s;
+            
+            }
+          }
+          .industry-details {
+            margin: 0 0 0 25px;
+            h4 {
+              font-size: 25px;
+              color: $primary-color;
+              font-weight: 700;
+              padding: 0 0 5px;
+            }
+            p {
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+        .slick-arrow {
+          position: absolute;
+          top: 50%;
+      
+          background: $white;
+          box-shadow: 0px 3px 6px #00000029;
+          border: none;
+          font-size: 0;
+          padding: 0;
+          cursor: pointer;
+          z-index: 1;
+          transform: translateY(-50%);
+          width: 35px;
+          height: 35px;
+          left: 50%;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          transform: translateX(-50%) translateY(-50%);
+          border-radius: 50%;
+      
+          &:hover {
+            background: $primary-color;
+          }
+        }
+        .slick-prev {
+          margin-top: -34px;
+      
+          &::before {
+             color: $secondary-color;
+             font-weight: normal;
+              color: #000;
+              content: "\f077";
+              font-family: 'FontAwesome';
+              font-size: 16px;
+          }
+          &:hover {
+            &::before {
+              color: $white;
+            }
+          }
+        }
+        .slick-next {
+          margin-top: 37px;
+          &::before {
+            color: $primary-color;
+            font-weight: normal;
+            content: "\f078";
+            font-family: 'FontAwesome';
+            font-size: 16px;
+          }
+          &:hover {
+            &::before {
+              color: $white;
+            }
+          }
+        }
+      }
+      
+      .industries-slider .draggable {
+        padding: 0 !important;
+      }
+      .industries-list.slick-current {
+        .industry-circle {
+          background: $primary-color !important;
+          img{
+            filter: grayscale(1) invert(1);
+          }
+          svg {
+            path {
+              fill: $white;
+            }
+            rect {
+              fill: $white;
+            }
+          }
+        }
+      }
+      
+}

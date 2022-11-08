@@ -1,0 +1,69 @@
+@import "../../styles/variables";
+.cta-section {
+    width: 100%;
+    height: 328px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(../../public/home/cta/cta-bg.webp) no-repeat;
+    background-size: cover;
+  
+    .cta-content {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+  
+      h2{
+          font-size: 45px;
+          color: $primary-color;
+          font-weight: 700;
+          padding: 0 0 5px;
+          margin: 0 0 0;
+      }
+      h3{
+          font-size: 25px;
+          color: $white;
+          font-weight: 700;
+          text-align: center;
+          padding: 0 0 15px;
+          line-height: 35px;
+      }
+      button{
+          margin: 0 15px 0 0;
+          font-size: 17px;
+          font-weight: 600;
+          text-transform: uppercase;
+          letter-spacing: 1.1px;
+
+          &:nth-child(1){
+            background: $white;
+            color: $primary-color;
+            width: 255px;
+            height: 55px;
+            line-height: 55px;
+          }
+          svg{
+            width: 18px;
+            vertical-align: text-bottom;
+            margin: 0 5px 0;
+          }
+  
+          &:hover{
+              span{
+                  background: $primary-color;
+              }
+          }
+  
+          &:nth-child(2){
+              &:hover{
+                  color: $primary-color;
+                  span{
+                      background: $white;
+                  }
+              }
+          }
+      }
+  
+    }
+  }

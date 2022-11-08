@@ -1,0 +1,507 @@
+@import "./variables";
+.home-banner {
+  position: relative;
+
+  &::after {
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(hsla(0, 0%, 100%, 0.03), #fdfcfc);
+    bottom: 0;
+    height: 100%;
+    opacity: 0.7;
+  }
+  &::before {
+    content: "";
+    left: 0;
+    position: absolute;
+    width: 100%;
+    background-size: 100%;
+    bottom: 0;
+    height: 247px;
+    background: url(../public/home/banner/before.webp) no-repeat;
+  }
+
+  .banner-companies {
+    align-items: center;
+    bottom: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    left: 50%;
+    margin: 0;
+    max-width: 80%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 100%;
+    z-index: 3;
+  }
+}
+
+.product-design {
+  align-items: center;
+  display: flex;
+  height: auto;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 0 0 40px;
+  position: relative;
+  width: 100%;
+  flex-flow: column;
+  &::before {
+    background: #fff linear-gradient(0deg, #fff, #fef6f6);
+    content: "";
+    height: 200px;
+    left: 0;
+    position: absolute;
+    top: -110px;
+    width: 100%;
+  }
+  .prod-content {
+    position: relative;
+    &:before {
+      background: $primary-color;
+      bottom: -15px;
+      content: "";
+      height: 4px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 65px;
+    }
+  }
+  .product-design-list {
+    display: grid;
+    grid-column-gap: 2%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    place-items: center;
+    grid-row-gap: 25px;
+    padding: 60px 0;
+    .product-main-box {
+      width: 100%;
+      height: 350px;
+      /* UI Properties */
+
+      position: relative;
+      transition: 0.5s;
+      // overflow: hidden;
+
+      &:hover {
+        .product-design-box {
+          transform: perspective(1000px) rotateY(180deg);
+        }
+        .product-design-overlay {
+          transform: perspective(1000px) rotateY(0);
+        }
+      }
+
+      &:nth-child(2) {
+        .product-design-box::before {
+          background: url(../public/home/product-design/android.webp) no-repeat;
+        }
+      }
+      &:nth-child(3) {
+        .product-design-box::before {
+          background: url(../public/home/product-design/ui-ux.webp) no-repeat;
+          width: 117px;
+          height: 150px;
+        }
+      }
+      &:nth-child(4) {
+        .product-design-box::before {
+          background: url(../public/home/product-design/web-development.webp)
+            no-repeat;
+          width: 116px;
+          height: 140px;
+        }
+      }
+      &:nth-child(5) {
+        .product-design-box::before {
+          background: url(../public/home/product-design/enterprise.webp)
+            no-repeat;
+          width: 127px;
+          height: 144px;
+        }
+      }
+      &:nth-child(6) {
+        .product-design-box::before {
+          background: url(../public/home/product-design/iot.webp) no-repeat;
+          width: 115px;
+          height: 146px;
+        }
+      }
+      &:nth-child(7) {
+        .product-design-box::before {
+          background: url(../public/home/product-design/cross-platform.webp)
+            no-repeat;
+          width: 131px;
+          height: 144px;
+        }
+      }
+      &:nth-child(8) {
+        .product-design-box::before {
+          background: url(../public/home/product-design/wearable.webp) no-repeat;
+          width: 137px;
+          height: 143px;
+        }
+      }
+
+      .product-design-box {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        backface-visibility: hidden;
+        transform: perspective(1000px) rotateY(0deg);
+        transition: 0.5s;
+        background: #ffffff;
+        box-shadow: 0px 3px 6px #00000029;
+        border-radius: 10px;
+        padding: 30px 25px;
+        z-index: 1;
+
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          background: url(../public/home/product-design/apple.webp) no-repeat;
+          width: 118px;
+          height: 167px;
+          background-size: 100%;
+        }
+
+        h4 {
+          padding: 0 0 10px;
+          font-size: 20px;
+          line-height: 28px;
+          font-weight: 700;
+        }
+        p {
+          font-size: 15px;
+          font-weight: 300;
+          line-height: 22px;
+        }
+      }
+      .product-design-overlay {
+        background: $primary-color;
+        border-radius: 10px;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+        transition: 0.5s;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+        transform: perspective(1000px) rotateY(-180deg);
+        box-shadow: 0px 3px 6px #00000029;
+
+        p {
+          color: #fff;
+          font-size: 14px;
+          line-height: 22px;
+          padding: 15px 5px;
+          text-align: center;
+          max-height: 150px;
+          overflow-y: auto;
+
+          &::-webkit-scrollbar-thumb {
+            background: $secondary-color;
+          }
+          // &::-webkit-scrollbar-track{
+          //   background: $primary-color;
+          //   color: #000;
+          // }
+        }
+        .learn-more {
+          background: #fff;
+          border-radius: 10px;
+          color: $primary-color;
+          letter-spacing: 1px;
+          overflow: hidden;
+          position: relative;
+          text-transform: uppercase;
+          transition: 0.5s;
+          z-index: 1;
+          cursor: pointer;
+          width: 193px;
+          height: 44px;
+          line-height: 44px;
+        }
+      }
+    }
+  }
+}
+.why-choose {
+  padding: 0 0 40px;
+  .why-heading {
+    position: relative;
+    &::before {
+      background: $primary-color;
+      bottom: -10px;
+      content: "";
+      height: 4px;
+      left: 50%;
+      position: absolute;
+      transform: translateX(-50%);
+      width: 65px;
+    }
+  }
+  .read-more-content {
+    overflow: hidden;
+    transition: 0.65s;
+
+    h4 {
+      font-size: 26px;
+      font-weight: 700;
+      padding: 0 0 5px;
+    }
+    p {
+      line-height: 30px;
+    }
+  }
+  .read-btn {
+    width: 198px;
+    height: 47px;
+    line-height: 47px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.linear-wrapper {
+  background: transparent
+    linear-gradient(
+      179deg,
+      hsla(0, 40%, 87%, 0.412),
+      rgba(222, 252, 251, 0.32) 51%,
+      hsla(0, 60%, 99%, 0.008) 96%,
+      hsla(0, 100%, 99%, 0)
+    );
+  .streamlined-develeopment {
+    padding: 80px 0 0;
+    position: relative;
+    width: 100%;
+    &::before {
+      background: url(../public/home/streamlined/working.webp) no-repeat;
+      background-size: 100% !important;
+      content: "";
+      height: 382px;
+      left: 40px;
+      position: absolute;
+      top: 40%;
+      width: 492px;
+    }
+    &::after {
+      background: url(../public/home/streamlined/background-image.webp)
+        no-repeat;
+      background-size: 100% !important;
+      content: "";
+      height: 100vh;
+      left: 0;
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: -1;
+    }
+    .stream-content {
+      position: relative;
+      &::before {
+        background: $primary-color;
+        bottom: -15px;
+        content: "";
+        height: 4px;
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+        width: 65px;
+      }
+    }
+    .streamlined-box {
+      margin-bottom: 80px;
+      margin-top: 80px;
+      width: 100%;
+      .streamlined-list {
+        background: url(../public/home/streamlined/curved.webp) no-repeat;
+        width: 100%;
+        height: 803px;
+        position: relative;
+
+        &::before {
+          background: url(../public/home/streamlined/curved.webp) no-repeat;
+          width: 100%;
+          height: 803px;
+          position: absolute;
+          content: "";
+          display: none;
+        }
+
+        li {
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          &:hover {
+            .stream-box {
+              span {
+                background: $secondary-color;
+
+                &::before {
+                  background: $secondary-color;
+                }
+              }
+              .streambox-details {
+                h6 {
+                  color: $secondary-color;
+                }
+              }
+            }
+          }
+
+          .stream-box {
+            display: flex;
+            align-items: center;
+            span {
+              width: 93px;
+              height: 93px;
+              background: $primary-color;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border-radius: 50%;
+              position: relative;
+              transition: 0.25s;
+              svg {
+                width: 70px;
+              }
+
+              &::before {
+                content: "";
+                height: 2px;
+                width: 10px;
+                background: $primary-color;
+                position: absolute;
+                right: -13px;
+                top: 7px;
+                width: 60px;
+                z-index: -1;
+              }
+            }
+            .streambox-details {
+              padding: 0 0 0 20px;
+              flex: 1;
+              h6 {
+                font-size: 20px;
+                font-weight: 700;
+                color: $primary-color;
+              }
+              p {
+                font-size: 15px;
+                font-weight: 500;
+                line-height: 24px;
+                max-width: 85%;
+                padding: 5px 0 0;
+              }
+            }
+          }
+
+          &:nth-child(1) {
+            left: 9%;
+            top: 2%;
+
+            .stream-box {
+              align-items: flex-start;
+
+              span {
+                &::before {
+                  top: 11px;
+                }
+              }
+            }
+          }
+          &:nth-child(2) {
+            left: 17%;
+            top: 16%;
+
+            .stream-box {
+              span {
+                &::before {
+                  top: 22px;
+                }
+              }
+            }
+          }
+
+          &:nth-child(3) {
+            left: 21.5%;
+            top: 33%;
+
+            .stream-box {
+              span {
+                &::before {
+                  top: 22px;
+                }
+              }
+            }
+          }
+          &:nth-child(4) {
+            left: 22%;
+            top: 51%;
+            .stream-box {
+              span {
+                &::before {
+                  top: 22px;
+                }
+              }
+            }
+          }
+          &:nth-child(5) {
+            left: 19%;
+            top: 68%;
+            .stream-box {
+              span {
+                &::before {
+                  top: 22px;
+                }
+              }
+            }
+          }
+          &:nth-child(6) {
+            left: 11%;
+            top: 83%;
+
+            .stream-box {
+              span {
+                &::before {
+                  top: 50%;
+                }
+              }
+            }
+          }
+          &:nth-child(7) {
+            left: 11%;
+            top: 82%;
+
+            .stream-box {
+              align-items: baseline;
+              span {
+                &::before {
+                  top: unset;
+
+                  bottom: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+}

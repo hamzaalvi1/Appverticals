@@ -1,0 +1,30 @@
+@import "../../styles/variables";
+.btn{
+    background: $primary-color;
+    font-size: 14px;
+    font-weight: 600;
+    height: 53px;
+    line-height: 53px;
+    margin: 0 15px 0 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: 350px;
+    position: relative;
+    color: #fff;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    transition: .5s;
+    z-index: 1;
+    span{
+        border-radius: 50%;
+        display: block;
+        height: 0;
+        position: absolute;
+        transform: translate(-50%,-50%);
+        transition: width .3s ease-in-out,height .3s ease-in-out;
+        width: 0;
+        z-index: -1;
+    
+    }
+}

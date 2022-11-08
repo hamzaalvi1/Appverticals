@@ -157,7 +157,7 @@ html {
 }
 
 body {
-  font-family: $primary-font;
+  font-family: $primary-font !important;
   overflow-x: hidden;
   max-width: 100%;
   font-size: 16px;
@@ -208,7 +208,7 @@ span {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   transition: all 0.3s ease-In-out;
 }
 
@@ -248,5 +248,8 @@ button {
   color: #a3a3a3;
   font-weight: 400;
 }
+
+
+
 
 /* Reset Css End */

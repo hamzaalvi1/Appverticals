@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+.content-details{
+    margin: 0;
+    position: relative;
+    text-align: center;
+    h3{
+        font-size: 30px;
+        font-weight: 700;
+        color: $primary-color;
+        margin: 0;
+    }
+    h2{
+        font-size: 40px;
+        line-height: 50px;
+        font-weight: 700;
+        color: $secondary-color;
+    }
+    p{
+        font-size: 16px;
+        line-height: 30px;
+    }
+}

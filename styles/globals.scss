@@ -1,3 +1,13 @@
 @import "./fonts.scss";
 @import "./resets.scss";
 
+// miniproductsections start
+.miniprodsection{
+    padding: 20px 0;
+    .miniprodslider{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+// miniproductsections end
