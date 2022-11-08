@@ -19,6 +19,7 @@ import { Button } from "../components/Button";
 import { Cta } from "../components/Cta";
 import { MiniProductSlider } from "../components/MiniProductSlider";
 import { FooterForm } from "../components/FooterForm";
+import { Testimonials } from "../components/Testimonials";
 export default function Home() {
   const bannerCompanies = () => {
     return bannerCompanyList.map((bcompany, idx) => {
@@ -250,6 +251,7 @@ export default function Home() {
           }
         />
       </main>
+      <Testimonials/>
       <MiniProductSlider/>
       <FooterForm/>
     </Fragment>
