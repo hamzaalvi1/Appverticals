@@ -4,6 +4,7 @@ import styles from "./Header.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
+import {Button} from "../Button"
 function Header() {
   const routes = [
     {
@@ -29,7 +30,8 @@ function Header() {
   ];
 
   return (
-    <header className={styles["main-header"]}>
+    <header className={styles["header"]}>
+      <div className={styles["main-header"]}>
       <Container>
         <Row className="align-items-center">
           <Col md={3}>
@@ -40,7 +42,7 @@ function Header() {
               alt="logo"
             />
           </Col>
-          <Col md={7}>
+          <Col md={9}>
             <ul className={styles["menu"]}>
               {routes.map((route) => {
                 if(route.name == "services"){
@@ -61,11 +63,17 @@ function Header() {
                   </li>
                 );
               })}
+              <li>
+                <Button classes={styles["get-in-touch"]} title="Get In Touch"/>
+              </li>
             </ul>
           </Col>
-          <Col></Col>
+          {/* <Col md={2}>
+            <Button title="Get In Touch" classes={"get-in-touch"}/> 
+          </Col>  */}
         </Row>
       </Container>
+    </div>
     </header>
   );
 }

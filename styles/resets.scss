@@ -216,6 +216,11 @@ p {
   font-family: $primary-font
 }
 
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
 textarea,
 select,
 input[type],
