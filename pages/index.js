@@ -21,6 +21,8 @@ import { MiniProductSlider } from "../components/MiniProductSlider";
 import { FooterForm } from "../components/FooterForm";
 import { Testimonials } from "../components/Testimonials";
 import { Footer } from "../components/Footer";
+import { DropdownCompany } from "../components/DropdownCompany";
+import { DropdownHireDeveloper } from "../components/DropdownHireDeveloper";
 export default function Home() {
   const bannerCompanies = () => {
     return bannerCompanyList.map((bcompany, idx) => {
@@ -256,6 +258,8 @@ export default function Home() {
       <MiniProductSlider/>
       <FooterForm/>
       <Footer/>
+      <DropdownCompany />
+      <DropdownHireDeveloper />
     </Fragment>
   );
 }

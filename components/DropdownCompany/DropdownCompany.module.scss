@@ -1,0 +1,198 @@
+@import "../../styles/variables";
+.dropdown-company {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    left: 0;
+    min-height: 565px;
+    top: 70px;
+    opacity: 0;
+    visibility: hidden;
+    background: $white;
+    transition: 0.5s;
+  
+    .company-dropdown-main-wrapper {
+      width: 100%;
+      min-height: 565px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-left: auto;
+      row-gap: 0;
+  
+      .company-list-dropdown {
+        background: linear-gradient(121deg, #fff, #f7fffe 53%, #ffe6e6);
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        position: relative;
+  
+        ul {
+          li {
+              p{
+                  img{
+                      vertical-align: baseline;
+                  }
+                  a {
+                        font-size: 18px;
+                        text-transform: capitalize;
+                        margin: 0 0 0 10px;
+                        color: #000;
+                        font-weight: 600;
+                        letter-spacing: .5px;
+                        position: relative;
+                        transition: .5s;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            bottom: -5px;
+                            width: 100%;
+                            height: 2px;
+                            background: $primary-color;
+                            transform: scaleX(0);
+                             transition: transform 0.5s ease;
+                        }
+                        &:hover{
+                            color: $primary-color;
+                            &::before{
+                            transform: scaleX(1);
+                        }
+                    }
+                          
+                  }
+                }
+            margin: 0 0 30px;
+            
+          }
+          li.active_subnav{
+            a{
+                color: $primary-color;
+                display: inline-block;
+                transition: 0.5s;
+
+                &::before{
+                    transform: scaleX(1);
+                }
+            }
+          }
+        }
+      }
+      .company-drop-wrap{
+          margin-top: -70px;
+          h6{
+              font-size: 20px;
+              font-weight: 500;
+              line-height: 28px;
+              margin: 0 0 20px;
+              position: relative;
+              &::before{
+                  content: "";
+                  position: absolute;
+                  top: 0;
+                  left: -30px;
+                  background: url("/menu-dropdown/cycle.webp") no-repeat;
+                  background-size: 100%;
+                  width: 21px;
+                  height: 21px;
+  
+              }
+              a{
+                  font-size: 18px;
+                  margin: 0 0 0 10px;
+                  text-transform: capitalize;
+                  color: #000;
+                  font-weight: 600;
+                  letter-spacing: .5px;
+                  position: relative;
+                  transition: .5s;
+              }
+          }
+          ul{
+              li{
+                  margin-bottom: 18px;
+                  a{
+                      font-size: 18px;
+                  }
+              }
+          }
+      }
+      .company-drop-bottom{
+          position: absolute;
+          left: 10%;
+          bottom: 50px;
+  
+          // &::before{
+          //     width: 100%;
+          //     height: 2px;
+          //     background: #e7e7e7;
+          //     position: absolute;
+          //     left: 0;
+          //     content: "";
+          // }
+          p{
+              a{
+                  text-transform: capitalize;
+                  color: $primary-color;
+                  i{
+                      font-size: 15px;;
+                  }
+              }
+          }
+      }
+  
+      .company-dropdown-images {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+  
+          .company-dropdown-box{
+              position: relative;
+  
+              img{
+                  height: 100%;
+                  object-fit: cover;
+              }
+              .cp-dp-bx {
+                  position: absolute;
+                  bottom: 50px;
+                  width: 250px;
+                  left: 20px;
+                  h6{
+                      font-size: 18px;
+                      color: $white;
+                      font-weight: 700;
+                      padding: 0 0 10px;
+                  }
+                  p{
+                      font-size: 16px;
+                      font-weight: 500;
+                      padding: 0 0 10px;
+                      color: $white;
+                      line-height: 30px;
+  
+  
+                  }
+                  a{
+                      color: $white;
+                      font-size: 16px;
+                      text-transform: capitalize;
+                      &:before{
+                          display: none;
+                      }
+  
+                      svg{
+                        width: 16px;
+                        vertical-align: sub;
+                      }
+                  }
+                  
+                  }
+              
+              
+              
+          }
+  
+         
+      }
+    }
+  }
+  
