@@ -10,8 +10,14 @@ import {dropdownServicesTechCms} from "../../utils/dropdown-services-mockup"
 import {dropdownServicesTechEcom} from "../../utils/dropdown-services-mockup"
 import Image from "next/image";
 import Link from "next/link";
+import {useState} from "react"
 
 function DropdownServices() {
+  
+    const [tabs,setTabs] = useState("core")
+    
+    const handleTabClick = (tabName)=> setTabs(tabName)
+      
   return (
     <div className={styles["dropdown-services"]}>
         <Container fluid className="p-0">
@@ -19,16 +25,16 @@ function DropdownServices() {
                 <Col md={2} className="p-0">
                     <div className={styles["drop-left-tab"]}>
                         <ul>
-                            <li><span>Core</span></li>
-                            <li><span>Industries</span></li>
-                            <li><span>Technologies</span></li>
+                            <li><span onClick={()=>handleTabClick("core")}>Core</span></li>
+                            <li><span onClick={()=>handleTabClick("industries")}>Industries</span></li>
+                            <li><span onClick={()=>handleTabClick("technologies")}>Technologies</span></li>
                         </ul>
                     </div>
                 </Col>
                 <Col md={10} className="p-0">
                     <div className={styles["dropdown-tabs"]}>
 
-                        <div className={styles["menuBox-core"]}>
+                        {tabs === "core" && <div className={styles["menuBox-core"]}>
                             <Row>
                                 <Col md={8} className="p-0">
                                     <div className={styles["drop-center-tab"]}>
@@ -101,9 +107,9 @@ function DropdownServices() {
                                     </div>
                                 </Col>
                             </Row>
-                        </div>
+                        </div> }
 
-                        <div className={styles["menuBox-industries"]}>
+                       {tabs === "industries" && <div className={styles["menuBox-industries"]}>
                             <Row>
                                 <Col md={8} className="p-0">
                                     <div className={styles["drop-center-tab"]}>
@@ -162,9 +168,9 @@ function DropdownServices() {
                                     </div>
                                 </Col>
                             </Row>
-                        </div>
+                         </div> }
 
-                        <div className={styles["menuBox-technologies"]}>
+                         {tabs === "technologies"&& <div className={styles["menuBox-technologies"]}>
                             <Row>
                                 <Col md={12} className="p-0">
                                     <div className={styles["drop-center-tab"]}>
@@ -265,7 +271,7 @@ function DropdownServices() {
                                     </div>
                                 </Col>
                             </Row>
-                        </div>
+                        </div>}
 
                     </div>
                 </Col>
