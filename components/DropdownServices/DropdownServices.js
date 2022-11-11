@@ -25,9 +25,9 @@ function DropdownServices() {
                 <Col md={2} className="p-0">
                     <div className={styles["drop-left-tab"]}>
                         <ul>
-                            <li><span onClick={()=>handleTabClick("core")}>Core</span></li>
-                            <li><span onClick={()=>handleTabClick("industries")}>Industries</span></li>
-                            <li><span onClick={()=>handleTabClick("technologies")}>Technologies</span></li>
+                            <li className={tabs == "core" ? `${styles["active"]}` : null}><span onClick={()=>handleTabClick("core")}>Core</span></li>
+                            <li className={tabs == "industries" ? `${styles["active"]}` : null}><span onClick={()=>handleTabClick("industries")}>Industries</span></li>
+                            <li className={tabs == "technologies" ? `${styles["active"]}` : null}><span onClick={()=>handleTabClick("technologies")}>Technologies</span></li>
                         </ul>
                     </div>
                 </Col>
@@ -109,7 +109,7 @@ function DropdownServices() {
                             </Row>
                         </div> }
 
-                       {tabs === "industries" && <div className={styles["menuBox-industries"]}>
+                        {tabs === "industries" && <div className={styles["menuBox-industries"]}>
                             <Row>
                                 <Col md={8} className="p-0">
                                     <div className={styles["drop-center-tab"]}>
@@ -170,7 +170,7 @@ function DropdownServices() {
                             </Row>
                          </div> }
 
-                         {tabs === "technologies"&& <div className={styles["menuBox-technologies"]}>
+                        {tabs === "technologies" && <div className={styles["menuBox-technologies"]}>
                             <Row>
                                 <Col md={12} className="p-0">
                                     <div className={styles["drop-center-tab"]}>
@@ -195,7 +195,7 @@ function DropdownServices() {
                                             </div>
 
                                             <div className={styles["service-wrap"]}>
-                                                <h6>Mobile</h6>
+                                                <h6>FrontEnd</h6>
                                                 <ul>
                                                     {dropdownServicesTechFrontEnd.map((techfront,idx)=>{
                                                     return(
@@ -213,7 +213,7 @@ function DropdownServices() {
                                             </div>
 
                                             <div className={styles["service-wrap"]}>
-                                                <h6>Mobile</h6>
+                                                <h6>BackEnd</h6>
                                                 <ul>
                                                     {dropdownServicesTechBackEnd.map((techback,idx)=>{
                                                     return(
@@ -231,7 +231,7 @@ function DropdownServices() {
                                             </div>
 
                                             <div className={styles["service-wrap"]}>
-                                                <h6>Mobile</h6>
+                                                <h6>CMS</h6>
                                                 <ul>
                                                     {dropdownServicesTechCms.map((techcms,idx)=>{
                                                     return(
@@ -249,7 +249,7 @@ function DropdownServices() {
                                             </div>
 
                                             <div className={styles["service-wrap"]}>
-                                                <h6>Mobile</h6>
+                                                <h6>E-commerce</h6>
                                                 <ul>
                                                     {dropdownServicesTechEcom.map((techecom,idx)=>{
                                                     return(
@@ -271,7 +271,7 @@ function DropdownServices() {
                                     </div>
                                 </Col>
                             </Row>
-                        </div>}
+                        </div> }
 
                     </div>
                 </Col>

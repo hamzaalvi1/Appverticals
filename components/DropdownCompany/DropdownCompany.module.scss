@@ -90,7 +90,7 @@
                   position: absolute;
                   top: 0;
                   left: -30px;
-                  background: url("/menu-dropdown/cycle.webp") no-repeat;
+                  background: url("/menu-dropdown/company/cycle.webp") no-repeat;
                   background-size: 100%;
                   width: 21px;
                   height: 21px;
@@ -105,6 +105,23 @@
                   letter-spacing: .5px;
                   position: relative;
                   transition: .5s;
+                  &::before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: -5px;
+                    width: 100%;
+                    height: 2px;
+                    background: $primary-color;
+                    transform: scaleX(0);
+                     transition: transform 0.5s ease;
+                }
+                &:hover{
+                    color: $primary-color;
+                    &::before{
+                    transform: scaleX(1);
+                    }
+                }
               }
           }
           ul{
@@ -196,3 +213,94 @@
     }
   }
   
+
+
+
+  
+/**====================================================================================================================**/
+/**                                              MEDIA QUERY START                                                     **/
+/**====================================================================================================================**/
+/* 
+  ##Device = HD Desktops
+  ##Screen = 1600px to higher resolution desktops
+*/
+@media screen and (min-width: 1500px) {
+
+
+  
+  
+} /* Dont delete this bracket! */ 
+/* 
+  ##Device = Laptop 
+  ##Screen = B/w 1366px to 1440px
+*/
+@media (min-width: 1366px) and (max-width: 1440px) {
+
+
+
+.dropdown-company .company-dropdown-main-wrapper .company-dropdown-images .company-dropdown-box .cp-dp-bx p {
+    font-size: 14px;
+    line-height: 25px;
+    margin-bottom: 0;
+}
+
+.dropdown-company .company-dropdown-main-wrapper .company-dropdown-images .company-dropdown-box .cp-dp-bx h6 {
+    font-size: 15px;
+    padding: 0 0 5px;
+}
+
+.dropdown-company .company-dropdown-main-wrapper .company-dropdown-images .company-dropdown-box .cp-dp-bx {
+    left: 10px;
+    width: 100%;
+}
+
+.dropdown-company .company-dropdown-main-wrapper .company-dropdown-images .company-dropdown-box img {
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+
+}
+/* 
+  ##Device = Ipads, Ipad Pro 
+  ##Screen = B/w 1024px to 1365px
+*/
+@media (min-width: 1024px) and (max-width: 1365px) {
+
+
+
+
+
+} /* 1024px to 1365px Dont delete this bracket! */
+/* 
+  ##Device = Tablets, Ipads 
+  ##Screen = B/w 768px to 1023px
+*/
+@media (min-width: 768px) and (max-width: 1023px) {
+
+
+  
+  
+} /* 768px to 1023px  Dont delete this bracket! */
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+
+
+
+} /* 481px to 767px (Landscape) Dont delete this bracket! */
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+
+
+
+
+} /* 320px to 480px (Portrait) Dont delete this bracket! */
+/**====================================================================================================================**/
+/**                                              MEDIA QUERY END                                                       **/
+/**====================================================================================================================**/

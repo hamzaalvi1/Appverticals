@@ -1,93 +1,93 @@
 export const dropdownHireWeb = [
     {
-        link: "Hire PHP Developer",
+        link: "Hire PHP Developers",
         href: "/hire-developer/php",
     },
     {
-        link: "Hire Laravel Developer",
+        link: "Hire Laravel Developers",
         href: "/hire-developer/laravel",
     },
     {
-        link: "Hire Codeigniter Developer",
+        link: "Hire Codeigniter Developers",
         href: "/hire-developer/codeigniter",
     },
     {
-        link: "Hire Node.js Developer",
+        link: "Hire Node.js Developers",
         href: "/hire-developer/nodejs",
     },
     {
-        link: "Hire Express.js Developer",
+        link: "Hire Express.js Developers",
         href: "/hire-developer/expressjs",
     },
 ]
 
 export const dropdownHireMobile = [
     {
-        link: "Hire iOS Developer",
+        link: "Hire iOS Developers",
         href: "/hire-developer/ios",
     },
     {
-        link: "Hire Android Developer",
+        link: "Hire Android Developers",
         href: "/hire-developer/android",
     },
     {
-        link: "Hire Swift Developer",
+        link: "Hire Swift Developers",
         href: "/hire-developer/swift",
     },
     {
-        link: "Hire Kotlin Developer",
+        link: "Hire Kotlin Developers",
         href: "/hire-developer/kotlin",
     },
 ]
 
 export const dropdownHireFrontend = [
     {
-        link: "Hire Angular Developer",
+        link: "Hire Angular Developers",
         href: "/hire-developer/angular",
     },
     {
-        link: "Hire ReactJS Developer",
+        link: "Hire ReactJS Developers",
         href: "/hire-developer/reactjs",
     },
     {
-        link: "Hire Vue.js Developer",
+        link: "Hire Vue.js Developers",
         href: "/hire-developer/vuejs",
     },    
 ]
 
 export const dropdownHireOpensource = [
     {
-        link: "Hire WordPress Developer",
+        link: "Hire WordPress Developers",
         href: "/hire-developer/wordpress",
     },
     {
-        link: "Hire Shopify Developer",
+        link: "Hire Shopify Developers",
         href: "/hire-developer/shopify",
     },
     {
-        link: "Hire Magento Developer",
+        link: "Hire Magento Developers",
         href: "/hire-developer/magento",
     },    
 ]
 
 export const dropdownHireMicrosoft = [
     {
-        link: "Hire ASP.NET Developer",
+        link: "Hire ASP.NET Developers",
         href: "/hire-developer/aspnet",
     },
     {
-        link: "Hire C# Developer",
+        link: "Hire C# Developers",
         href: "/hire-developer/shopify",
     },    
 ]
 
 export const dropdownHireCrossPlatform = [
     {
-        link: "Hire Xamarin Developer",
+        link: "Hire Xamarin Developers",
         href: "/hire-developer/xamarin",
     },
     {
-        link: "Hire Ionic Developer",
+        link: "Hire Ionic Developers",
         href: "/hire-developer/ionic",
     },    
 ]

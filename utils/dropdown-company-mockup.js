@@ -1,6 +1,6 @@
 export const dropdownCompany = [
     {
-        src: "/menu-dropdown/about.webp",
+        src: "/menu-dropdown/company/about.webp",
         height: "25",
         width: "25",
         alt: "about",
@@ -8,7 +8,7 @@ export const dropdownCompany = [
         href: "/about",
     },
     {
-        src: "/menu-dropdown/how-it-work.webp",
+        src: "/menu-dropdown/company/how-it-work.webp",
         height: "25",
         width: "25",
         alt: "about",
@@ -16,7 +16,7 @@ export const dropdownCompany = [
         href: "/how-we-work",
     },
     {
-        src: "/menu-dropdown/agile.webp",
+        src: "/menu-dropdown/company/agile.webp",
         height: "25",
         width: "25",
         alt: "about",
@@ -24,7 +24,7 @@ export const dropdownCompany = [
         href: "/agile",
     },
     {
-        src: "/menu-dropdown/blog.webp",
+        src: "/menu-dropdown/company/blog.webp",
         height: "25",
         width: "25",
         alt: "about",
@@ -32,7 +32,7 @@ export const dropdownCompany = [
         href: "/blog",
     },
     {
-        src: "/menu-dropdown/testimonials.webp",
+        src: "/menu-dropdown/company/testimonials.webp",
         height: "25",
         width: "25",
         alt: "about",
@@ -40,7 +40,7 @@ export const dropdownCompany = [
         href: "/testimonails",
     },
     {
-        src: "/menu-dropdown/location.webp",
+        src: "/menu-dropdown/company/location.webp",
         height: "25",
         width: "20",
         alt: "about",
@@ -74,7 +74,7 @@ export const dropdownCompanyLeft = [
 
 export const dropdownCompanyRight = [
     {
-        src: "/menu-dropdown/bitbox.webp",
+        src: "/menu-dropdown/company/bitbox.webp",
         height: "566",
         width: "343",
         alt: "bitbox",
@@ -84,7 +84,7 @@ export const dropdownCompanyRight = [
         anchorTitle:"Learn More",
     },
     {
-        src: "/menu-dropdown/enqueue.webp",
+        src: "/menu-dropdown/company/enqueue.webp",
         height: "566",
         width: "343",
         alt: "Enqueue",
@@ -94,7 +94,7 @@ export const dropdownCompanyRight = [
         anchorTitle:"Learn More",
     },
     {
-        src: "/menu-dropdown/davinci.webp",
+        src: "/menu-dropdown/company/davinci.webp",
         height: "566",
         width: "343",
         alt: "Davinci",
