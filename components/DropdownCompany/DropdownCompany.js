@@ -1,5 +1,5 @@
-import styles from "./DropdownCompany.module.scss"
 import { Container, Row, Col } from "reactstrap";
+import styles from "./DropdownCompany.module.scss"
 import Image from "next/image";
 import Link from "next/link";
 import {dropdownCompany} from "../../utils/dropdown-company-mockup"

@@ -1,4 +1,4 @@
-export const DropdownHireWeb = [
+export const dropdownHireWeb = [
     {
         link: "Hire PHP Developer",
         href: "/hire-developer/php",
@@ -21,7 +21,7 @@ export const DropdownHireWeb = [
     },
 ]
 
-export const DropdownHireMobile = [
+export const dropdownHireMobile = [
     {
         link: "Hire iOS Developer",
         href: "/hire-developer/ios",
@@ -40,7 +40,7 @@ export const DropdownHireMobile = [
     },
 ]
 
-export const DropdownHireFrontend = [
+export const dropdownHireFrontend = [
     {
         link: "Hire Angular Developer",
         href: "/hire-developer/angular",
@@ -55,7 +55,7 @@ export const DropdownHireFrontend = [
     },    
 ]
 
-export const DropdownHireOpensource = [
+export const dropdownHireOpensource = [
     {
         link: "Hire WordPress Developer",
         href: "/hire-developer/wordpress",
@@ -70,7 +70,7 @@ export const DropdownHireOpensource = [
     },    
 ]
 
-export const DropdownHireMicrosoft = [
+export const dropdownHireMicrosoft = [
     {
         link: "Hire ASP.NET Developer",
         href: "/hire-developer/aspnet",
@@ -81,7 +81,7 @@ export const DropdownHireMicrosoft = [
     },    
 ]
 
-export const DropdownHireCrossPlatform = [
+export const dropdownHireCrossPlatform = [
     {
         link: "Hire Xamarin Developer",
         href: "/hire-developer/xamarin",
