@@ -1,7 +1,6 @@
 import { Fragment, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
 import styles from "../styles/Home.module.scss";
 import { Banner } from "../components/Banner";
 import poster from "../public/home/banner/poster.webp";
@@ -12,19 +11,12 @@ import {
   productList,
   bannerCompanyList,
   streamlinedList,
-} from "../utils/home-loops";
+} from "../utils/home-mockup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhoneAlt, faComment } from "@fortawesome/free-solid-svg-icons";
 import { Button } from "../components/Button";
 import { Cta } from "../components/Cta";
-import { MiniProductSlider } from "../components/MiniProductSlider";
-import { FooterForm } from "../components/FooterForm";
-import { Testimonials } from "../components/Testimonials";
-import { Footer } from "../components/Footer";
-import { DropdownCompany } from "../components/DropdownCompany";
-import { DropdownHireDeveloper } from "../components/DropdownHireDeveloper";
-import { DropdownServices } from "../components/DropdownServices";
-import { DropdownOurWork } from "../components/DropdownOurWork";
+
 export default function Home() {
   const bannerCompanies = () => {
     return bannerCompanyList.map((bcompany, idx) => {
@@ -256,14 +248,6 @@ export default function Home() {
           }
         />
       </main>
-      <Testimonials/>
-      <MiniProductSlider/>
-      <FooterForm/>
-      <Footer/>
-      <DropdownCompany />
-      <DropdownHireDeveloper />
-      <DropdownServices />
-      <DropdownOurWork />
     </Fragment>
   );
 }

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { TextContent } from "../Content";
-import { Testimonials1,Testimonials2 } from "../../utils/home-loops";
+import { Testimonials1,Testimonials2 } from "../../utils/home-mockup";
 import Slider from "react-slick";
 import Image from "next/image";
 import {FaYoutube} from "react-icons/fa"

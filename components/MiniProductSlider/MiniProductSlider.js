@@ -1,5 +1,5 @@
 import {Container,Row,Col} from "reactstrap"
-import {miniProduct} from "../../utils/home-loops"
+import {miniProduct} from "../../utils/home-mockup"
 import Image from "next/image"
 function MiniProductSlider() {
   return (

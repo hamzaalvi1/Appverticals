@@ -9,9 +9,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 
 
-function DropdownCompany() {
+function DropdownCompany({classes}) {
   return (
-    <div className={styles["dropdown-company"]}>
+    <div className={`${styles["dropdown-company"]} ${classes}`}>
         <Container fluid className="p-0">
             <Row className="align-items-center">
                 <Col md={12}>

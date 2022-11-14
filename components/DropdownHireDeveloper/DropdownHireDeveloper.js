@@ -13,9 +13,9 @@ import {dropdownHireCrossPlatform} from "../../utils/dropdown-hiredeveloper-mock
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faRightLong } from "@fortawesome/free-solid-svg-icons";
 
-function DropdownHireDeveloper() {
+function DropdownHireDeveloper({classes}) {
   return (
-    <div className={styles["dropdown-hire-developer"]}>
+    <div className={`${styles["dropdown-hire-developer"]} ${classes}`}>
         <Container fluid className="p-0">
             <Row className="align-items-center">
                 <Col md={9} className="p-0">

@@ -37,6 +37,7 @@
 
     li {
 
+
       
       
       a.active_nav{
@@ -75,7 +76,10 @@
           &::before{
             transform: scaleX(1);
           }
-
+          .onHover{
+            opacity: 1 ;
+            visibility: visible;
+          }
         }
        
       }

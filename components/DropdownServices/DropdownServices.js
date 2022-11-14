@@ -12,14 +12,14 @@ import Image from "next/image";
 import Link from "next/link";
 import {useState} from "react"
 
-function DropdownServices() {
+function DropdownServices({classes}) {
   
     const [tabs,setTabs] = useState("core")
     
     const handleTabClick = (tabName)=> setTabs(tabName)
       
   return (
-    <div className={styles["dropdown-services"]}>
+    <div className={`${styles["dropdown-services"]} ${classes}`}>
         <Container fluid className="p-0">
             <Row className="align-items-center">
                 <Col md={2} className="p-0">

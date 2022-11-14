@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 
-function DropdownOurWork() {
+function DropdownOurWork({classes}) {
   return (
-    <div className={styles["dropdown-casestudies"]}>
+    <div className={`${styles["dropdown-casestudies"]} ${classes}`}>
     <Container fluid>
         <Row className="align-items-start">
             <Col md={3} className="p-0">

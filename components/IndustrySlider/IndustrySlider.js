@@ -4,7 +4,7 @@ import styles from "./IndustrySlider.module.scss";
 import { TextContent } from "../Content";
 import Slider from "react-slick";
 import Image from "next/image";
-import { industryMobileImages,industryMobileData } from "../../utils/home-loops";
+import { industryMobileImages,industryMobileData } from "../../utils/home-mockup";
 
 function IndustrySlider(props) {
   const [industrySlider1, setIndustrySlider1] = useState(null);
